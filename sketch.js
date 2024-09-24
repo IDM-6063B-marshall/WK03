@@ -14,27 +14,17 @@ function star(x,y,w, c){
 }
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(220, 20, 50);
+  background(300, 120, 500);
   strokeWeight(3);
-  star (100, 100, 50, 5)
-  star (200, 200, 50, 5)
-  star (300, 100, 50, 5)
-  star (200, 200, 50, 5)
+  //star (100, 100, 50, 5)
+ // star (200, 200, 50, 5)
+ // star (300, 100, 50, 5)
+  //star (200, 200, 50, 5)
 
- 
-  noFill()
-  push
-  translate (400, 300)
-
- // for (let d = 20; d < 220; d+=9) {
- //   ellipse (0, 0, d)
-  //}
-for (let cnt=0; cnt<20; cnt++){
-  print(cnt)
-  ellipse (0, 0, 10*cnt)
+for (let x = 50; x < width ; x += 100)
+  star (x, 50, 80, 10)
+  
 }
 
-
-}
 
 function draw() {}
